@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon/doctor.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Peliculas series y de más</title>
+</head>
+
+<body class="bg-[url('./images/caratula.webp')]">
+    <div class="m-10">
+        <section class="flex  bg-gradient-to-br from-yellow-400 via-pink-500 to-blue-500 rounded-t-lg  h-12 ">
+            <h1 class="m-auto font-sans text-2xl  w-2/3 text-center capitalize  ">Busca tus series, peliculas preferidas y
+                disfruta de mucho más</h1>
+        </section>
+        <section class="flex my-5">
+            <p class="bg-black text-white text-3xl px-10 py-2 rounded-l-lg   ">¿Que Buscas?</p>
+            <input type="text" id="buscar" placeholder="Busca tu pelicula serie......" class="w-2/4 px-2 text-2xl">
+            <button id="searchButton" class="bg-black text-white text-3xl px-20 text-center rounded-r-lg  hover:bg-red-500 transition-all duration-75 ease-out">Buscar</button>
+        </section>
+        <section>
+            <div id="pelicula" class="bg-gradient-to-br from-black-700 to-blue-700 via-black-700" >
+            </div>
+        </section>
+    </div>
+</body>
+<script src="./api.js"></script>
+<script src="./Click.js"></script>
+
+</html>
