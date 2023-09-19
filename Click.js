@@ -30,6 +30,9 @@ async function buscarPeliculas() {
 
           const titulo = document.createElement("h3");
           titulo.textContent = pelicula.title;
+          
+          peliculaDiv.classList.add("bg-black","rounded-xl")
+          titulo.classList.add("w-full", "h-auto","text-white","text-center","text-xl");
 
           const imagen = document.createElement("img");
           imagen.src = `https://image.tmdb.org/t/p/w500/${pelicula.poster_path}`;

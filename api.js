@@ -8,7 +8,7 @@
     console.log(datas);
 
     const divContainer = document.querySelector("#pelicula");
-    divContainer.classList.add("grid", "grid-cols-4", "gap-4");
+    divContainer.classList.add("grid","grid-cols-4", "gap-4");
 
     datas.results.map((data) => {
       const div = document.createElement("div");
@@ -29,7 +29,7 @@
         "mb-2"
       );
       imagen.classList.add("w-full", "h-auto");
-      Descripcion.classList.add("text-white","bg-black","h-auto")
+      Descripcion.classList.add("text-black","px-5","rounded","bg-white","h-auto")
       titulos.textContent = data.title;
       imagen.src = `https://image.tmdb.org/t/p/w500/${data.poster_path}`;
       Descripcion.textContent = data.overview;
